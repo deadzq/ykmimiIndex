@@ -1,10 +1,10 @@
-package com.ykmimi.newindex.dao;
+package com.ykmimi.newindex.mapper;
 
 import com.ykmimi.newindex.bean.Admin;
 
 import java.util.List;
 
-public interface AdminDao {
+public interface AdminMapper {
 
     /*管理员用户名密码登陆*/
     Admin adminLogin(Admin admin);
@@ -20,6 +20,9 @@ public interface AdminDao {
 
     /*更新管理员资料*/
     Integer updateAdminDynamic(Admin admin);
+
+    /*删除管理员元组*/
+    Integer deleteAdminById(Integer admin_id);
 
 
 }

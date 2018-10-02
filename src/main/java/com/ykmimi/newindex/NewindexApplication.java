@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 
 @SpringBootApplication
-@MapperScan("com.ykmimi.newindex.dao")
+@MapperScan("com.ykmimi.newindex.mapper")
 @ComponentScan(basePackages = {"com.ykmimi.newindex.controller", "com.ykmimi.newindex.service", "com.ykmimi.newindex.service.impl"})
 public class NewindexApplication {
     public static void main(String[] args) throws Exception {

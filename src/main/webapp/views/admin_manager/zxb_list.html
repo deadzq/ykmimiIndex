@@ -130,7 +130,7 @@
 		singleSelect:'true',/*只能选择一条记录 */
 		queryParams:  form2Json('searchform'),/* 把条件选择框中的 内容 传给 control */
 		/* 
-			dao 执行的是select查询命令方法名 queryXXX  query查询  params  
+			mapper 执行的是select查询命令方法名 queryXXX  query查询  params
 			查询参数   调用control的时候传递的参数  
 		 */
 	    columns:[[
@@ -252,7 +252,7 @@
 				singleSelect:'true',/*只能选择一条记录 */
 				queryParams:  {zxid:row.zxid},/* 把条件选择框中的 内容 传给 control */
 				/* 
-					dao 执行的是select查询命令方法名 queryXXX  query查询  params  
+					mapper 执行的是select查询命令方法名 queryXXX  query查询  params
 					查询参数   调用control的时候传递的参数  
 				 */
 			    columns:[[

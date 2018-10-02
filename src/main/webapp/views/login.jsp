@@ -39,7 +39,7 @@
                 <div class="col-md-6 col-md-offset-3 clean-superblock" id="contact">
                     <h2>Login Master</h2>
                     
-                    <form method="POST" accept-charset="utf-8" class="contact-form">
+                    <form method="POST"  class="contact-form" id="adminLoginForm">
                         <input type="text" name="admin_name" id="login-name" placeholder="Name" class="form-control input-lg">
                         <input type="password" name="admin_password" id="login-pwd" placeholder="PassWord" class="form-control input-lg">
                         <div class="buttons clearfix">

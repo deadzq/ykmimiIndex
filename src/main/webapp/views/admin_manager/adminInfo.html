@@ -91,7 +91,7 @@
 		queryParams:  form2Json('searchform'),
 		 
 	    columns:[[
-			{field:'admin_id',title:'id', hidden: true},
+			{field:'admin_id',title:'管理员ID', hidden: false},
 			
 			{field:'admin_name',title:'管理员名',width:100},
 			
@@ -169,7 +169,7 @@
 						/* $.post('url路径',数据,回调方法,格式);
 							row.xwsj 
 						 */
-						$.post('/updateAdminDynamic',{id:row.xwid},function(result){
+						$.post('/deleteAdminById',{admin_id:row.admin_id},function(result){
 							if (result>0){
 								$.messager.alert('删除结果','成功');
 								$('#dg').datagrid('reload');	 
